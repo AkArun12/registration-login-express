@@ -16,6 +16,8 @@ connectDB(DATABASE_URL)
 // app.set('views', './views')
 app.set('view engine', 'ejs')
 
+// Middleware to use req.body properties
+app.use(express.urlencoded({extended:true}))
 
 
 // Static files- publicfolder (we can use css and js now)
