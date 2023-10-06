@@ -3,6 +3,15 @@ class UserController{
 
         res.render('index')
     }
+    static login=(req,res)=>{
+
+        res.render('login')
+    }
+
+    static registration=(req,res)=>{
+
+        res.render('registration');
+    }
 
 
 
